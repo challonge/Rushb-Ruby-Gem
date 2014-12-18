@@ -8,6 +8,8 @@ require "rushb/smash/match"
 require "rushb/smash/player"
 require "rushb/smash/ranking"
 
+require "rushb/client/game"
+
 module Rushb
   # Your code goes here...
 end
