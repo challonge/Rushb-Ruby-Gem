@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/akdarrah/rushb-ruby"
   spec.summary       = "Rushb Ruby Bindings"
   spec.description   = "Rushb ELO Ranking System"
-  spec.authors       = ["Adam Darrah"]
-  spec.email         = 'adam@challonge.com'
+  spec.authors       = ["CHALLONGE! LLC"]
+  spec.email         = 'developers@challonge.com'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
