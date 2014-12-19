@@ -9,6 +9,8 @@ require "rushb/smash/player"
 require "rushb/smash/ranking"
 
 require "rushb/resources/game"
+require "rushb/resources/player"
+require "rushb/resources/match"
 
 require "rushb/client"
 

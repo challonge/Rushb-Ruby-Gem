@@ -2,6 +2,8 @@ module Rushb
   class Client < ::RocketPants::Client
 
     include Rushb::Resources::Game
+    include Rushb::Resources::Player
+    include Rushb::Resources::Match
 
     version 1
     base_uri 'http://elo.dev'

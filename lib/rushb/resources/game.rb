@@ -27,6 +27,12 @@ module Rushb
           :transformer => Rushb::Smash::Game
       end
 
+      def game_rankings(id, options={})
+        get "games/#{id}/rankings",
+          :transformer => Rushb::Smash::Ranking,
+          :extra_query => options
+      end
+
     end
   end
 end
