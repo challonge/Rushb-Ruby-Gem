@@ -1,6 +1,6 @@
 # Rushb
 
-TODO: Write a gem description
+Rushb ELO Ranking System by CHALLONGE! LLC
 
 ## Installation
 

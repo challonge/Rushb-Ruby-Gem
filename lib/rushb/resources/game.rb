@@ -2,9 +2,6 @@ module Rushb
   module Resources
     module Game
 
-      # Pagination example:
-      #  Rushb::Client::Game.new.all
-      #  Rushb::Client::Game.new.all(page: 2)
       def games(options={})
         get 'games',
           :transformer => Rushb::Smash::Game,
