@@ -6,7 +6,7 @@ module Rushb
     include Rushb::Resources::Match
 
     version 1
-    base_uri 'http://elo.dev'
+    base_uri 'http://www.rushb.tv'
 
     def initialize(api_key)
       @api_key = api_key

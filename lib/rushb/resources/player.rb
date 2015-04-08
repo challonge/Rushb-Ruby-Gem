@@ -19,7 +19,6 @@ module Rushb
           :extra_body  => {:player => params}
       end
 
-      # TODO: Implement on API
       def destroy_player(game_id, id)
         delete "games/#{game_id}/players/#{id}",
           :transformer => Rushb::Smash::Player
