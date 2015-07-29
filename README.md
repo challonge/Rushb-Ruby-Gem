@@ -2,6 +2,8 @@
 
 Rushb ELO Ranking System by CHALLONGE! LLC
 
+API Documentation can be found at https://www.mashape.com/akdarrah/rushb-elo-engine/overview.
+
 ## Installation
 
 Add this line to your application's Gemfile:
