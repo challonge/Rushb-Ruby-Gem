@@ -9,6 +9,7 @@ module Rushb
       property :player_id
       property :created_at
       property :updated_at
+      property :related_ranking, transformer: Ranking
     end
 
   end
