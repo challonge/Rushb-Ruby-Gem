@@ -4,6 +4,7 @@ module Rushb
     class Ranking < ::APISmith::Smash
       property :id
       property :rating
+      property :previous_rating
       property :match_id
       property :player_id
       property :created_at
