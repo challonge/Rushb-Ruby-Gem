@@ -9,7 +9,7 @@ module Rushb
       property :game_id
       property :created_at
       property :updated_at
-      property :latest_ranking, transformer: ::Smash::Ranking
+      property :latest_ranking, transformer: Ranking
     end
 
   end
