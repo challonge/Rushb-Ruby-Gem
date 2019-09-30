@@ -1,9 +1,10 @@
 require 'rspec'
 require 'rushb'
+require 'pry'
 require_relative '../../support/vcr.rb'
 
 RSpec.describe Rushb::Resources::Game, type: :client, vcr: true do
-  let!(:client) { Rushb::Client.new('4cdb7f00862e0133005b033abce37ff2') }
+  let!(:client) { Rushb::V2::Client.new("4cdb7f00862e0133005b033abce37ff2") }
 
   describe '#games' do
     it 'returns with the games?' do
@@ -38,13 +39,13 @@ RSpec.describe Rushb::Resources::Game, type: :client, vcr: true do
     it "creates a game record" do
       response = client.create_game
       
-      expect(response["id"]).to eq 178275
+      expect(response["id"]).to eq 178283
     end
 
     it "creates a game record with the params passed" do
       response = client.create_game({ default_rating: 2000, pro_rating_boundary: 5000 })
 
-      expect(response["id"]).to eq 178276
+      expect(response["id"]).to eq 178284
     end
   end
 
@@ -73,6 +74,16 @@ RSpec.describe Rushb::Resources::Game, type: :client, vcr: true do
 
       expect(response.first["rating"]).to eq 987
       expect(response.first["previous_rating"]).to eq 1000
+    end
+  end
+
+  describe "#top_players" do
+    it "returns with the top players for the game" do
+      response = client.top_players([169961])
+          
+      expect(response.length).to eq 1
+      expect(response.first["top_player"]["rating"]).to eq 1012
+      expect(response.first["top_player"]["player_id"]).to eq 596495
     end
   end
 end

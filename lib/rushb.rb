@@ -14,5 +14,7 @@ require "rushb/resources/match"
 
 require "rushb/client"
 
+require "rushb/v2/client"
+
 module Rushb
 end
