@@ -10,4 +10,12 @@ RSpec.describe Rushb::Client do
       expect(client.base_query_options[:api_key]).to eq 'xxx'
     end
   end
+
+  describe "#sending requests" do
+    it "tries to send the request" do
+      expect {
+        client.games
+      }.to raise_error(RocketPants::Unauthenticated)
+    end
+  end
 end
