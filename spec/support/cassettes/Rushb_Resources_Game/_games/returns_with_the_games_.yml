@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://elo.challonge.com/1/games?api_key=4cdb7f00862e0133005b033abce37ff2&format=json&page=1&per_page=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 08:13:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4872'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"85e4e5361acf722128a57dd20e1bfac2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d3efd26a-a26a-405a-a087-d4d43aea2388
+      X-Runtime:
+      - '0.008478'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":176248,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-09-05T12:01:39.441Z","updated_at":"2019-09-05T12:01:39.441Z","scheduled_for_destruction":false},{"id":176247,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-09-05T12:01:38.986Z","updated_at":"2019-09-05T12:01:38.986Z","scheduled_for_destruction":false},{"id":174782,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-20T08:17:55.787Z","updated_at":"2019-08-20T08:17:55.787Z","scheduled_for_destruction":false},{"id":174781,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-20T08:17:55.350Z","updated_at":"2019-08-20T08:17:55.350Z","scheduled_for_destruction":false},{"id":174394,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-16T09:46:03.353Z","updated_at":"2019-08-16T09:46:03.353Z","scheduled_for_destruction":false},{"id":174393,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-16T09:46:02.916Z","updated_at":"2019-08-16T09:46:02.916Z","scheduled_for_destruction":false},{"id":174384,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-16T07:33:40.454Z","updated_at":"2019-08-16T07:33:40.454Z","scheduled_for_destruction":false},{"id":174383,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-16T07:33:40.019Z","updated_at":"2019-08-16T07:33:40.019Z","scheduled_for_destruction":false},{"id":174310,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-15T12:55:14.869Z","updated_at":"2019-08-15T12:55:14.869Z","scheduled_for_destruction":false},{"id":174309,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-08-15T12:55:14.413Z","updated_at":"2019-08-15T12:55:14.413Z","scheduled_for_destruction":false},{"id":172496,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-31T10:53:39.756Z","updated_at":"2019-07-31T10:53:39.756Z","scheduled_for_destruction":false},{"id":172495,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-31T10:53:39.215Z","updated_at":"2019-07-31T10:53:39.215Z","scheduled_for_destruction":false},{"id":172494,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-31T09:31:29.578Z","updated_at":"2019-07-31T09:31:29.578Z","scheduled_for_destruction":false},{"id":172493,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-31T09:31:29.116Z","updated_at":"2019-07-31T09:31:29.116Z","scheduled_for_destruction":false},{"id":172492,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-31T09:29:14.548Z","updated_at":"2019-07-31T09:29:14.548Z","scheduled_for_destruction":false},{"id":172491,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-31T09:29:13.827Z","updated_at":"2019-07-31T09:29:13.827Z","scheduled_for_destruction":false},{"id":172434,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-26T09:01:41.230Z","updated_at":"2019-07-26T09:01:41.230Z","scheduled_for_destruction":false},{"id":172433,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-26T09:01:40.768Z","updated_at":"2019-07-26T09:01:40.768Z","scheduled_for_destruction":false},{"id":171744,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-19T10:52:53.763Z","updated_at":"2019-07-19T10:52:53.763Z","scheduled_for_destruction":false},{"id":171743,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-07-19T10:52:53.258Z","updated_at":"2019-07-19T10:52:53.258Z","scheduled_for_destruction":false}],"count":20,"pagination":{"current":1,"previous":null,"next":2,"per_page":20,"pages":4,"count":76}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 08:13:54 GMT
+- request:
+    method: get
+    uri: http://elo.challonge.com/1/games?api_key=4cdb7f00862e0133005b033abce37ff2&format=json&page=2&per_page=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 08:13:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6059'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"352c8ceb9e0c8e2ce4f7d1e2f83c1655"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18fe4ef7-f2c8-4401-89a3-6cb10495c5f8
+      X-Runtime:
+      - '0.010386'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":169961,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-06-28T10:25:20.367Z","updated_at":"2019-06-28T10:25:20.367Z","scheduled_for_destruction":false},{"id":169960,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-06-28T10:15:38.259Z","updated_at":"2019-06-28T10:15:38.259Z","scheduled_for_destruction":false},{"id":169959,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-06-28T10:15:37.815Z","updated_at":"2019-06-28T10:15:37.815Z","scheduled_for_destruction":false},{"id":169958,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-06-28T10:02:04.822Z","updated_at":"2019-06-28T10:02:04.822Z","scheduled_for_destruction":false},{"id":169957,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-06-28T10:02:04.372Z","updated_at":"2019-06-28T10:02:04.372Z","scheduled_for_destruction":false},{"id":169956,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-06-28T09:53:39.022Z","updated_at":"2019-06-28T09:53:39.022Z","scheduled_for_destruction":false},{"id":169955,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-06-28T09:53:38.576Z","updated_at":"2019-06-28T09:53:38.576Z","scheduled_for_destruction":false},{"id":167634,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-31T09:54:46.174Z","updated_at":"2019-05-31T09:54:46.174Z","scheduled_for_destruction":false},{"id":167633,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-31T09:54:45.687Z","updated_at":"2019-05-31T09:54:45.687Z","scheduled_for_destruction":false},{"id":167450,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-29T09:41:20.335Z","updated_at":"2019-05-29T09:41:20.335Z","scheduled_for_destruction":false},{"id":167449,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-29T09:41:19.881Z","updated_at":"2019-05-29T09:41:19.881Z","scheduled_for_destruction":false},{"id":167380,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-28T08:56:25.347Z","updated_at":"2019-05-28T08:56:25.347Z","scheduled_for_destruction":false},{"id":167379,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-28T08:56:24.902Z","updated_at":"2019-05-28T08:56:24.902Z","scheduled_for_destruction":false},{"id":165974,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-07T11:57:52.516Z","updated_at":"2019-05-07T11:57:52.516Z","scheduled_for_destruction":false},{"id":165973,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-07T11:57:52.065Z","updated_at":"2019-05-07T11:57:52.065Z","scheduled_for_destruction":false},{"id":165972,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-07T11:56:53.282Z","updated_at":"2019-05-07T11:56:53.282Z","scheduled_for_destruction":false},{"id":165971,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-05-07T11:56:52.834Z","updated_at":"2019-05-07T11:56:52.834Z","scheduled_for_destruction":false},{"id":165074,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-25T13:41:03.019Z","updated_at":"2019-04-25T13:41:03.019Z","scheduled_for_destruction":false},{"id":165073,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-25T13:41:02.542Z","updated_at":"2019-04-25T13:41:02.542Z","scheduled_for_destruction":false},{"id":163554,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-02T13:05:57.625Z","updated_at":"2019-04-02T13:05:57.625Z","scheduled_for_destruction":false},{"id":163553,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-02T13:05:57.175Z","updated_at":"2019-04-02T13:05:57.175Z","scheduled_for_destruction":false},{"id":163552,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-02T13:01:36.304Z","updated_at":"2019-04-02T13:01:36.304Z","scheduled_for_destruction":false},{"id":163551,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-02T13:01:35.860Z","updated_at":"2019-04-02T13:01:35.860Z","scheduled_for_destruction":false},{"id":163550,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-02T13:01:20.900Z","updated_at":"2019-04-02T13:01:20.900Z","scheduled_for_destruction":false},{"id":163549,"application_id":6,"default_k_factor":15,"default_rating":1000,"pro_rating_boundry":2400,"starter_boundry":30,"created_at":"2019-04-02T13:01:20.461Z","updated_at":"2019-04-02T13:01:20.461Z","scheduled_for_destruction":false}],"count":25,"pagination":{"current":2,"previous":1,"next":3,"per_page":25,"pages":4,"count":76}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 08:13:55 GMT
+recorded_with: VCR 5.0.0
