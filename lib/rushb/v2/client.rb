@@ -40,7 +40,7 @@ module Rushb
         elsif resp.code == 304
           #Rails.cache.read(resp.headers['etag'])
         else
-          {}
+          raise ClientError, "#{resp.code} #{resp.message}"
         end
       end
 
