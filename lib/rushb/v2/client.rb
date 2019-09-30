@@ -25,44 +25,46 @@ module Rushb
         "User-Agent" => "HTTParty"
       }
 
-      def initialize(api_key)
+      def initialize(api_key, cache = nil)
         @options = OPTION_DEFAULTS.merge(api_key: api_key)
+        @cache = nil
       end
 
       private
 
       def parse_response(resp)
         if resp.code == 200 || resp.code == 201
-          #Rails.cache.write(unique_cache_tag, resp.headers['etag'])
-          #Rails.cache.write(resp.headers['etag'], resp.parsed_response['response'])
+          if @cache.present?
+            @cache.write(unique_cache_tag, resp.headers['etag'])
+            @cache.write(resp.headers['etag'], resp.parsed_response['response'])
+          end
 
           resp.parsed_response["response"]
         elsif resp.code == 304
-          #Rails.cache.read(resp.headers['etag'])
+          @cache.read(resp.headers['etag']) if @cache.present?
         else
           raise ClientError, "#{resp.code} #{resp.message}"
         end
       end
 
       def request_headers
-        #if Rails.cache.read(unique_cache_tag).present?
-          #HEADER_DEFAULTS.merge(
-            #{
-              #"If-None-Match" => Rails.cache.read(unique_cache_tag)
-            #}
-          #)
-        #else
-          #HEADER_DEFAULTS
-        #end
-        HEADER_DEFAULTS
+        if @cache.present? && @cache.read(unique_cache_tag).present?
+          HEADER_DEFAULTS.merge(
+            {
+              "If-None-Match" => @cache.read(unique_cache_tag)
+            }
+          )
+        else
+          HEADER_DEFAULTS
+        end
       end
 
       def unique_cache_tag
-        raise ClientError, "##{__method__} must be implemented in subclass"
+        "#{__method__}-#{__id__}-#{cache_tag_date}"
       end
 
       def cache_tag_date
-        Time.zone.today.to_time.to_i
+        DateTime.now.to_i
       end
     end
   end
