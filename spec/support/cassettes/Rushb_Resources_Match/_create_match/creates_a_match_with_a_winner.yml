@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://elo.challonge.com/1/games/169961/players?api_key=4cdb7f00862e0133005b033abce37ff2&format=json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 09:43:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '251'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"36bbf69e4e2c79d3c573107b709c556d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 48a509e4-bb8e-4362-8541-74ba37e50967
+      X-Runtime:
+      - '0.008417'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"id":596495,"pro":false,"game_id":169961,"created_at":"2019-09-30T09:43:28.580Z","updated_at":"2019-09-30T09:43:28.580Z","rating":1000,"scheduled_for_destruction":false,"starting_rating":1000,"latest_ranking":null,"previous_rating":null}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 09:43:28 GMT
+- request:
+    method: post
+    uri: http://elo.challonge.com/1/games/169961/players?api_key=4cdb7f00862e0133005b033abce37ff2&format=json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 09:43:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '251'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"23cef3ec6064bb26a78119f588b98566"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 81bae781-4e62-461c-9b3b-a723d28917b8
+      X-Runtime:
+      - '0.008710'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"id":596496,"pro":false,"game_id":169961,"created_at":"2019-09-30T09:43:29.074Z","updated_at":"2019-09-30T09:43:29.074Z","rating":1000,"scheduled_for_destruction":false,"starting_rating":1000,"latest_ranking":null,"previous_rating":null}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 09:43:29 GMT
+- request:
+    method: post
+    uri: http://elo.challonge.com/1/games/169961/matches?api_key=4cdb7f00862e0133005b033abce37ff2&format=json
+    body:
+      encoding: UTF-8
+      string: match[player1_id]=596495&match[player2_id]=596496&match[winner_id]=596495
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 09:43:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '277'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"334bf84974c4cb807c37beb87fd8ff16"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7f1631ef-e2c0-43a6-94af-84bd8608e138
+      X-Runtime:
+      - '0.019617'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"id":2217756,"game_id":169961,"player1_id":596495,"player2_id":596496,"winner_id":596495,"played_at":"2019-09-30T09:43:29.521Z","created_at":"2019-09-30T09:43:29.526Z","updated_at":"2019-09-30T09:43:29.526Z","scheduled_for_destruction":false,"tournament_id":null}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 09:43:29 GMT
+recorded_with: VCR 5.0.0

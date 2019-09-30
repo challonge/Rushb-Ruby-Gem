@@ -1,6 +1,5 @@
 require 'rspec'
 require 'rushb'
-require 'pry'
 require_relative '../../support/vcr.rb'
 
 RSpec.describe Rushb::Resources::Game, type: :client, vcr: true do

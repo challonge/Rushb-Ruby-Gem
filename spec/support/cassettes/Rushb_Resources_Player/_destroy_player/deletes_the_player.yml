@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://elo.challonge.com/1/games/169961/players/596485?api_key=4cdb7f00862e0133005b033abce37ff2&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 09:38:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '250'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1040876cc46256959b2af5f62989615f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 21d8ee36-f2b3-4bc0-910d-6df51c69bc74
+      X-Runtime:
+      - '0.010535'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"id":596485,"pro":false,"game_id":169961,"created_at":"2019-09-30T09:37:30.082Z","updated_at":"2019-09-30T09:38:19.927Z","rating":1000,"scheduled_for_destruction":true,"starting_rating":1000,"latest_ranking":null,"previous_rating":null}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 09:38:20 GMT
+recorded_with: VCR 5.0.0

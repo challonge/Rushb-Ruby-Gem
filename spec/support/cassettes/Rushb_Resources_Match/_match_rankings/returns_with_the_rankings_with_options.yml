@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://elo.challonge.com/1/games/169961/matches/2173724/rankings?api_key=4cdb7f00862e0133005b033abce37ff2&format=json&page=1&per_page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 08:54:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '470'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - '"abb1219aa5333ec0ca59f6aab1288343"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b5a9ff39-07e9-4da7-8380-c065f960762a
+      X-Runtime:
+      - '0.011073'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":240922856,"rating":987,"match_id":2173724,"player_id":568369,"created_at":"2019-08-23T14:00:16.797Z","updated_at":"2019-08-23T14:00:16.797Z","previous_rating":1000,"related_ranking":{"id":240922854,"rating":1012,"match_id":2173724,"player_id":568368,"created_at":"2019-08-23T14:00:16.770Z","updated_at":"2019-08-23T14:00:16.770Z","previous_rating":1000}}],"count":1,"pagination":{"current":1,"previous":null,"next":2,"per_page":1,"pages":2,"count":2}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 08:54:42 GMT
+recorded_with: VCR 5.0.0
