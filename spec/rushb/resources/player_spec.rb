@@ -4,7 +4,7 @@ require 'rushb'
 require_relative '../../support/vcr.rb'
 
 RSpec.describe Rushb::Resources::Player, type: :client, vcr: true do
-  let!(:client) { Rushb::V2::Client.new('4cdb7f00862e0133005b033abce37ff2') }
+  let!(:client) { Rushb::Client.new('4cdb7f00862e0133005b033abce37ff2') }
   let!(:game_id) { 169961 }
 
   describe "#players" do

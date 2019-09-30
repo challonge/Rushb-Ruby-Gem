@@ -3,7 +3,7 @@ require 'rushb'
 require_relative '../../support/vcr.rb'
 
 RSpec.describe Rushb::Resources::Match, type: :client, vcr: true do
-  let!(:client) { Rushb::V2::Client.new('4cdb7f00862e0133005b033abce37ff2') }
+  let!(:client) { Rushb::Client.new('4cdb7f00862e0133005b033abce37ff2') }
   let!(:game_id) { 169961 }
 
   describe "#matches" do
@@ -53,7 +53,7 @@ RSpec.describe Rushb::Resources::Match, type: :client, vcr: true do
     it "doesn't create a match" do
       expect {
         client.create_match(game_id)
-      }.to raise_error(Rushb::V2::ClientError)
+      }.to raise_error(Rushb::ClientError)
     end
   end
 
