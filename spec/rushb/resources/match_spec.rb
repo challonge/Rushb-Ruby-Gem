@@ -20,7 +20,7 @@ RSpec.describe Rushb::Resources::Match, type: :client, vcr: true do
     it "returns with the match of the game" do
       response = client.show_match(game_id, 2173724)
 
-      expect(response.class).to eq Hash
+      expect(response.class).to eq OpenStruct
       expect(response["id"]).to eq 2173724
       expect(response["game_id"]).to eq game_id
     end
@@ -33,7 +33,7 @@ RSpec.describe Rushb::Resources::Match, type: :client, vcr: true do
     it "creates a match without a winner" do
       response = client.create_match(game_id, { player1_id: player1["id"], player2_id: player2["id"] })
 
-      expect(response.class).to be Hash
+      expect(response.class).to be OpenStruct
       expect(response["id"]).to eq 2217755
       expect(response["player1_id"]).to eq player1["id"]
       expect(response["player2_id"]).to eq player2["id"]
@@ -43,7 +43,7 @@ RSpec.describe Rushb::Resources::Match, type: :client, vcr: true do
     it "creates a match with a winner" do
       response = client.create_match(game_id, { player1_id: player1["id"], player2_id: player2["id"], winner_id: player1["id"] })
 
-      expect(response.class).to be Hash
+      expect(response.class).to be OpenStruct
       expect(response["id"]).to eq 2217756
       expect(response["player1_id"]).to eq player1["id"]
       expect(response["player2_id"]).to eq player2["id"]
@@ -65,7 +65,7 @@ RSpec.describe Rushb::Resources::Match, type: :client, vcr: true do
       match = client.create_match(game_id, { player1_id: player1["id"], player2_id: player2["id"] })
       response = client.update_match(game_id, match["id"], { player1_id: player2["id"], player2_id: player1["id"] })
 
-      expect(response.class).to be Hash
+      expect(response.class).to be OpenStruct
       expect(response["id"]).to eq 2217761
       expect(response["player1_id"]).to eq player2['id']
       expect(response["player2_id"]).to eq player1['id']
@@ -81,7 +81,7 @@ RSpec.describe Rushb::Resources::Match, type: :client, vcr: true do
       match = client.create_match(game_id, { player1_id: player1["id"], player2_id: player2["id"] })
       response = client.destroy_match(game_id, match["id"])
 
-      expect(response.class).to be Hash
+      expect(response.class).to be OpenStruct
       expect(response["id"]).to eq 2217763
     end
   end

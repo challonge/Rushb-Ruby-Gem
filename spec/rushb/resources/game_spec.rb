@@ -1,5 +1,6 @@
 require 'rspec'
 require 'rushb'
+
 require_relative '../../support/vcr.rb'
 
 RSpec.describe Rushb::Resources::Game, type: :client, vcr: true do
@@ -10,9 +11,9 @@ RSpec.describe Rushb::Resources::Game, type: :client, vcr: true do
       response = client.games({ page: 1, per_page: 20 })
 
       expect(response.length).to eq 20
-      expect(response.first["id"]).to eq 176248
-      expect(response.first["default_k_factor"]).to eq 15
-      expect(response.first["default_rating"]).to eq 1000
+      expect(response.first.id).to eq 176248
+      expect(response.first.default_k_factor).to eq 15
+      expect(response.first.default_rating).to eq 1000
 
       response = client.games({ page: 2, per_page: 25 })
 
@@ -27,8 +28,8 @@ RSpec.describe Rushb::Resources::Game, type: :client, vcr: true do
     it "returns with the game object" do
       response = client.show_game(176248)
 
-      expect(response["application_id"]).to eq 6
-      expect(response["default_rating"]).to eq 1000
+      expect(response.application_id).to eq 6
+      expect(response.default_rating).to eq 1000
       expect(response["default_k_factor"]).to eq 15
       expect(response["pro_rating_boundry"]).to eq 2400
     end

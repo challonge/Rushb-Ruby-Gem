@@ -40,7 +40,7 @@ RSpec.describe Rushb::Resources::Player, type: :client, vcr: true do
     it "returns the player details" do
       response = client.show_player(game_id, 568368)
 
-      expect(response.class).to eq Hash
+      expect(response.class).to eq OpenStruct
       expect(response["id"]).to eq 568368
       expect(response["pro"]).to be_falsey
       expect(response["rating"]).to eq 1012
@@ -51,7 +51,7 @@ RSpec.describe Rushb::Resources::Player, type: :client, vcr: true do
     it "creates a player" do
       response = client.create_player(game_id)
 
-      expect(response.class).to eq Hash
+      expect(response.class).to eq OpenStruct
       expect(response["id"]).to eq 596484
       expect(response["pro"]).to be_falsey
       expect(response["rating"]).to eq 1000
@@ -60,7 +60,7 @@ RSpec.describe Rushb::Resources::Player, type: :client, vcr: true do
     it "creates a player with params" do
       response = client.create_player(game_id, { pro: true })
 
-      expect(response.class).to eq Hash
+      expect(response.class).to eq OpenStruct
       expect(response["id"]).to eq 596485
       expect(response["pro"]).to be_falsey
       expect(response["rating"]).to eq 1000
@@ -71,7 +71,7 @@ RSpec.describe Rushb::Resources::Player, type: :client, vcr: true do
     it "deletes the player" do
       response = client.destroy_player(game_id, 596485)
 
-      expect(response.class).to eq Hash
+      expect(response.class).to eq OpenStruct
       expect(response["id"]).to eq 596485
     end
   end
