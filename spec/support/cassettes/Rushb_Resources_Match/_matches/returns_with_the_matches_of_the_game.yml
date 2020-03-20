@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://elo.challonge.com/1/games/169961/matches?api_key=4cdb7f00862e0133005b033abce37ff2&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 30 Sep 2019 08:54:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '378'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"864d7eef5a2b57d121173f7c61acdced"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 29d37a29-771f-4c9d-96bf-5375bfa28658
+      X-Runtime:
+      - '0.007023'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":2173724,"game_id":169961,"player1_id":568368,"player2_id":568369,"winner_id":568368,"played_at":"2019-08-23T14:00:15.000Z","created_at":"2019-08-23T14:00:16.603Z","updated_at":"2019-08-23T14:00:16.603Z","scheduled_for_destruction":false,"tournament_id":null}],"count":1,"pagination":{"current":1,"previous":null,"next":null,"per_page":25,"pages":1,"count":1}}'
+    http_version: 
+  recorded_at: Mon, 30 Sep 2019 08:54:41 GMT
+recorded_with: VCR 5.0.0
