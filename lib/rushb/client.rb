@@ -38,7 +38,11 @@ module Rushb
           @cache.write(resp.headers['etag'], resp.parsed_response['response'])
         end
 
-        JSON.parse(resp["response"].to_json, object_class: OpenStruct)
+        if JSON.parse(resp["response"].to_json).class == Array
+          JSON.parse(resp.to_json, object_class: OpenStruct)
+        else
+          JSON.parse(resp["response"].to_json, object_class: OpenStruct)
+        end
       elsif resp.code == 304
         @cache.read(resp.headers['etag']) if !@cache.nil?
       else
