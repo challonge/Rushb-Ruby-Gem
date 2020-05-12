@@ -21,7 +21,7 @@ module Rushb
         parse_response(self.class.get("/games/#{id}/rankings", { query: @options.merge(options), headers: request_headers }))
       end
 
-      def rerank(id)
+      def rerank_game(id)
         parse_response(self.class.post("/games/#{id}/rerank", { query: @options, headers: request_headers }))
       end
 
